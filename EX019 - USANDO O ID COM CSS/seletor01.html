@@ -8,32 +8,42 @@
 </head>
 <body>
     <h1 id="principal">Criando Sites com HTML e CSS</h1>
+    <!-- 
+     <h1 id="principal" class="destaque">Criando Sites com HTML e CSS</h1>
+     Dá pra usar uma class com id tambem conforme h1 acima, porem o ID sobrepoem-->
+
+    <!--
+    IMPORTANTE dentro de um documento só pode ter um elemento com um ID.
+    funciona colocando o mesmo ID em outros elementos porém não é coorreto segundo as regras do w3c.
+    -->
 
     <h1>Aprendendo HTML</h1>
     
-    <h2>HTML básico</h2>
+    <h2 class="basico">HTML básico</h2>
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, natus aliquam, necessitatibus ad rem aut expedita sequi eius sed reiciendis hic minus. Quod, minima ad ullam nemo porro provident magni.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, natus aliquam, <span class="basico">necessitatibus</span> ad rem aut expedita sequi eius sed reiciendis hic minus. Quod, minima ad ullam nemo porro provident magni.</p>
+    <!-- Dá para usar a class basico em outros luagres conforme a tag span acima-->
     
-    <h2>HTML intermediário</h2>
+    <h2 class="intermediario">HTML intermediário</h2>
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ratione vero aliquam quae aperiam natus blanditiis nemo, perspiciatis non illum commodi molestiae, autem dolore consequatur officiis sint voluptatem? Natus, tempore.</p>
     
-    <h2>HTML avançado</h2>
+    <h2 class="avancado">HTML avançado</h2>
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptatum velit vero asperiores animi magni suscipit rem. Molestias veniam quas sequi, nulla ex architecto rerum tempore repudiandae eius alias tempora?</p>
     
-    <h1>Aprendendo CSS</h1>
+    <h1 class="destaque">Aprendendo CSS</h1>
     
-    <h2>CSS básico</h2>
+    <h2 class="basico">CSS básico</h2>
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magni, architecto voluptatum, impedit repellat delectus in corrupti quaerat assumenda nostrum nisi corporis deserunt at provident minus aut nemo saepe odio.</p>
     
-    <h2>CSS Intermediário</h2>
+    <h2 class="intermediario">CSS Intermediário</h2>
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi a aspernatur. Deleniti ullam fuga itaque? Accusamus velit quaerat iure vero sint nam. Odit natus quam ipsum iusto, harum ullam.</p>
     
-    <h2>CSS avançado</h2>
+    <h2 class="avancado destaque">CSS avançado</h2>
+    <!-- Dá para usar duas class em uma só conforme h2 acima-->
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatum, aut voluptatibus possimus perferendis molestiae quibusdam saepe harum, esse, similique reiciendis dicta provident eius iste blanditiis quia ipsa at illum!</p>
 

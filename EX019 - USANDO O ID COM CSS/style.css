@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-em HTML é id    = em CSS é #
-em HTML é class = em CSS é .(ponto)
+em HTML é id    = em CSS é # (só pode um elemento)
+em HTML é class = em CSS é .(ponto) (pode vários elementos)
 */
 
 body{
@@ -12,7 +12,13 @@ body{
 h1{
     color: #1e402f;
 }
-/*Funciona tirando o h1 e deixando somente #principal*/
+
+/*Funciona tirando o h1 e deixando somente #principal
+
+IMPORTANTE dentro de um documento só pode ter um elemento com um ID
+
+funciona colocando o mesmo ID em outros elementos porém não é coorreto segundo as regras do w3c.
+*/
 h1#principal {
     text-align: center;
     background-color: #3c805e;
@@ -21,4 +27,19 @@ h1#principal {
 
 h2{
     color: #3c805e;
+}
+.basico{
+    color: #3c805e;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
+.destaque{
+    background-color: #c5c56070 ;
 }
