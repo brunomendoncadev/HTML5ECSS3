@@ -5,20 +5,20 @@ em HTML é class = em CSS é .(ponto)
 */
 
 body{
-    background-color: rgb(205,255,203);
+    background-color: #d6fde9;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color: rgb(4, 109,0);
+    color: #1e402f;
 }
 /*Funciona tirando o h1 e deixando somente #principal*/
 h1#principal {
     text-align: center;
-    background-color: rgb(4, 109,0);
+    background-color: #3c805e;
     color: white;
 }
 
 h2{
-    color: rgb(51, 77, 49);
+    color: #3c805e;
 }
