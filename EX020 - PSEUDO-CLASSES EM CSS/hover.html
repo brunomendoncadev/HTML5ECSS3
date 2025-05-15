@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none
+        }
+        /*
+        display none para esconder/nao aparecer
+        div > p
+        para fazer acao dentro <p> dentro da DIV
+        esse p é filho desta DIV.
+        */
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        /* div:hover para mostrar algo ao passar o mouse, neste caso ira mostrar algo no p que esta dentro da div.
+        
+        display block -> mostra
+
+        :hover uma pseudo classe
+
+        > representacao de filho da classe
+        */
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>texto escondido</p>
+    </div>
+</body>
+</html>
