@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        /* Como selecionar no css.(simbologias importante, para esses seletores)
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho de algo elemento)
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* esta pseudoclasse é para mudar a cor quando o link foi visitado,neste caso para darkred*/
+        a:visited {
+            color: darkred;
+        }
+
+        /*esta pseudoclasse é para mudar a cor e sublinhar quando passar o mouse em cima do link*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        /*esta pseudoclasse é para ativar algo no momento do ato de clique,neste caso ficara na cor amarelo, durante o clique somente*/
+        a:active {
+            color: yellow;
+        }
+
+        /* observacao.
+           pseudoclasse ex. a:active , a:hover ":" dois pontos determina.
+           pseudo-elemento ex. a::after "::" duas vezes dois pontos. 
+        */
+
+
+        /*este pseudo-elemento coloca algo antes do link, neste caso uma seta */
+        a::before {
+            content: '→';
+
+        }
+        
+        /* este pseudo-Elmento ira add algo depois do link , neste caso aparecera a palavra link*/
+        
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+         /* esta class especial foi criado no link do youtube para alterar coisas no link do youtube, neste caso o backgroun-color*/
+        .especial {
+            background-color: rgb(255, 140,140);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/brunomendoncadev?tab=repositories" target="_blank">Repositorio Github</a></li>
+        
+        <li><a href="https://www.youtube.com/@brunnomendoncadev" class="especial">Canal Youtube</a></li>
+        
+        <li><a href="https://www.google.com.br">Site do Curso</a></li>
+    </ul>
+</body>
+</html>
