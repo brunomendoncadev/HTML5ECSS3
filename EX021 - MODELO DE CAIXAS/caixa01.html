@@ -5,23 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixa</title>
     <style>
-        h1{
+        h1{  /*box-level ocupa a largura inteira do site */
             background-color: lightgray;
             height: 300px;
             width: 300px;
+
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 20px auto 40px auto;
+            outline: 5px dashed salmon;
+        }
+
+        a{  /*inline-level ocupa um espaço no meio do texto da linha*/
+            border: 10px solid red;
+            padding: 10px;
+        }
+
+            /*
+            -------------------------------------------------
             border-width: 10px;
             border-style: solid;
             border-color: darkslategray;
+            
+            substituição por shorthand abaixo
+            border: 10px solid darkslategray;
+            -------------------------------------------------
+            padding-top: 10px; é acima
+            padding-right: 10px; é lado direito
+            padding-bottom: 10px; é do debaixo
+            padding-left: 10px; é lado esquerdo
 
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            /* padding-bottom: 10px; este padding é do debaixo*/
-            padding-left: 10px;
+            substituição por shorthand abaixo
+            
+            padding: 10px 10px 10px 10px;
+            
+            quando for todos os lados com o mesmo valor pode fazer assim:
+            
+            padding: 10px
+            -------------------------------------------------
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+            substituição por shorthand abaixo
 
-        }
+            margin: 20px 20px 40px 20px
 
-        a{
+            margin: 20px auto 40px auto -> para centralizar a box no meio da tela automaticamente.
+
+            -------------------------------------------------
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            substituição por shorthand abaixo
+            
+            outline: 5px dashed salmon;
+            -------------------------------------------------
+            a{
             border-width: 10px;
             border-style: solid;
             border-color: red;
@@ -30,8 +72,16 @@
             padding-right: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
-
-        }
+            
+            substituição por shorthand abaixo
+            
+            border: 10px solid red;
+            padding: 10px;
+            }
+            -------------------------------------------------
+            */       
+        
+      
     </style>
 </head>
 <body>
